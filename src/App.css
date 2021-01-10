@@ -1,0 +1,33 @@
+.app {
+  background-color: aquamarine;
+  padding: 25px;
+}
+
+.navigation {
+  background-color: burlywood;
+  grid-area: nav;
+}
+
+.post {
+  background-color: #fff;
+  width: 250px;
+  padding: 15px;
+  margin-bottom: 3px;
+}
+
+.post .name {
+  font-weight: bold;
+}
+
+.postBody {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);;
+}
+
+.postButton {
+  border: 0;
+  text-decoration: underline;
+  padding: 5px;
+  float: right;
+}
