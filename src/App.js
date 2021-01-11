@@ -1,17 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
 import Navigation from './Components/Navigation';
-import Post from './Components/Post';
+import Posts from './Components/Posts';
+import Messages from './Components/Messages';
+import { BrowserRouter, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="app">
-      <Navigation />
-      <div>
-        <Post name='Dima' body='Hi, there' likeCount='25' />
-        <Post name='Anton' body='How are you doing?' likeCount='14' />
+    <BrowserRouter>
+      <div className="app">
+        <div className='header'>
+
+        </div>
+        <div className='bodyxon'>
+          <div className='navigation'><Navigation /></div>
+          <div className='content'>
+            <Route path='/profile' component={Posts} />
+            <Route path='/messages' component={Messages} />
+          </div>
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,11 +1,10 @@
+import { NavLink } from 'react-router-dom';
+
 function Navigation() {
   return (
-    <nav className="navigation">
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Бойцы</a></li>
-      </ul>
+    <nav>
+        <div><NavLink to="/profile">Профиль</NavLink></div>
+        <div><NavLink to="/messages">Сообщения</NavLink></div>
     </nav>
   );
 }

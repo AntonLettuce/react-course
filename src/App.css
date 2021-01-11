@@ -1,33 +1,77 @@
 .app {
-  background-color: aquamarine;
-  padding: 25px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.ava {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: grey;
 }
 
 .navigation {
-  background-color: burlywood;
-  grid-area: nav;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 20%;
+  padding: 25px;
+  float: left;
+  height: 1000px;
 }
 
-.post {
-  background-color: #fff;
-  width: 250px;
-  padding: 15px;
-  margin-bottom: 3px;
+.content {
+  width: 75%;
+  float: right;
 }
 
-.post .name {
+.navigation div:not(:first-child) {
+  margin-top: 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation a.active {
   font-weight: bold;
 }
 
-.postBody {
-  margin: 10px 0;
+.post, .message {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  height: 150px;
+}
+
+.post .name, .message .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.postBody, .messageBody {
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .postButton {
-  border: 0;
-  text-decoration: underline;
-  padding: 5px;
+  margin-top: 10px;
+  border: 2px solid #508fb9;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 12px;
   float: right;
+}
+
+.answerBody {
+  border: none;
+  border-bottom: 2px solid #508fb9;
+  width: 75%;
+  height: 50px;
 }
